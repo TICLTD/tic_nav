@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Nav</title>
+    <!--css -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- font-awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Ensure Tailwind's base styles are applied */
+      @import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+      .group-dom:hover .group-dom-hover\:block {
+        display: block;
+      }
+      .group-host:hover .group-host-hover\:block {
+        display: block;
+      }
+      .group-dm:hover .group-dm-hover\:block {
+        display: block;
+      }
+      .group-wd:hover .group-wd-hover\:block {
+        display: block;
+      }
+      .group-wdd:hover .group-wdd-hover\:block {
+        display: block;
+      }
+      .group-gd:hover .group-gd-hover\:block {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="font-barlow overflow-y-scroll">
+    <div class="main-container">
+      <div
+        class="all-header-parent bg-header-image bg-cover bg-center pb-[100px]"
+      >
+        <!-- header-top start -->
+        <div class="w-full border border-customGray max-991px:border-none">
+          <div
+            id="header-top-nav"
+            class="header-top-nav-controller max-991px:w-full min-992px:mx-auto min-992px:my-0 flex justify-between max-991px:flex-col max-991px:bg-dipOrg max-991px:hidden"
+          >
+            <!-- header-top list left start -->
+            <ul
+              class="flex list-none px-25 pb-0 max-991px:mx-auto max-991px:my-0 max-767px:flex-col max-767px:mx-auto max-767px:my-0"
+            >
+              <li
+                class="flex items-center px-25 py-15 border-r border-customGray max-1199px:px-5px"
+              >
+                <a
+                  href="#"
+                  class="max-1238px:text-13px max-767px:m-auto max-767px:justify-center max-767px:items-center"
+                  ><i
+                    class="fa-solid fa-phone mr-1.5 text-customGrayDark max-991px:text-white"
+                  ></i>
+                  <span class="text-customGrayDark max-991px:text-white">
+                    +88 01722-952895</span
+                  >
+                </a>
+              </li>
+              <li class="flex items-center pl-2.5 max-1238px:text-13px">
+                <i
+                  class="fa-solid fa-location-dot mr-1.5 text-customGrayDark max-991px:text-white"
+                ></i>
+                <span class="text-customGrayDark max-991px:text-white">
+                  AH.Tower (5th Floor), Alokar More, Ghoramara, Boalia,
+                  Rajshahi</span
+                >
+              </li>
+            </ul>
+            <!-- header-top list left end -->
+            <!-- header-top list right start -->
+            <ul
+              class="flex list-none px-25 pb-0 items-center max-991px:mx-auto max-991px:my-0"
+            >
+              <li class="pr-1.5 max-1199px:text-13px">
+                <p class="text-customGrayDark max-991px:text-white">
+                  Find us on :
+                </p>
+              </li>
+              <li
+                class="p-2 items-center px-25 py-15 border-r border-customGray max-1199px:text-13px max-1199px:px-10px"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook-messenger text-customOrg max-991px:text-white"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="p-2 items-center pr-6 pl-4 py-15 border-r border-customGray max-1199px:text-13px max-1199px:px-10px"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-twitter text-customOrg max-991px:text-white"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="p-2 items-center pr-6 pl-4 py-15 border-r border-customGray max-1199px:text-13px max-1199px:px-10px"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-instagram text-customOrg max-991px:text-white"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="p-2 items-center pr-6 pl-4 py-15 border-r border-customGray max-1199px:text-13px max-1199px:px-10px"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-youtube text-customOrg max-991px:text-white"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="p-2 items-center pr-6 pl-4 py-15 max-1199px:text-13px max-1199px:px-10px"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-linkedin text-customOrg max-991px:text-white"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+            <!-- header-top list right end -->
+          </div>
+        </div>
+        <!-- header-top end -->
+        <!-- header-bottom start -->
+        <div class="header-parent w-full mt-5px relative mb-[90px]">
+          <div
+            class="head-btm-container w-10/12 mx-auto flex justify-between max-1199px:flex-col max-991px:flex-row-important max-991px:items-center-important"
+          >
+            <div class="headerbtm-itemleft w-150">
+              <a href="/">
+                <img
+                  src="./assets/images/01.png"
+                  class="w-full object-cover object-center"
+                  alt="Tic Logo"
+                />
+              </a>
+            </div>
+            <div>
+              <div
+                class="headerbtm-itemright flex items-center max-1199px:justify-end max-991px:items-center max-991px:justify-items-center"
+              >
+                <nav
+                  id="header-bottom-nav"
+                  class="min-992px:relative max-991px:w-84% max-991px:absolute max-991px:top-[59px] max-991px:right-[30px] max-991px:bg-customOrg max-991px:overflow-y-scroll z-[10002]"
+                >
+                  <ul class="flex list-none max-991px:flex-col">
+                    <li class="max-991px:p-10px">
+                      <a
+                        href="#"
+                        class="menu-home group text-base font-bold py-15 px-17 capitalize transition-all duration-300 ease text-midDark relative max-991px:text-white"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="group relative">
+                      <a
+                        href="#"
+                        id="courses-toggle"
+                        class="text-base font-bold min-992px:py-3.5 px-4 capitalize transition-all duration-300 ease text-midDark relative max-991px:text-white max-991px:justify-between max-991px:flex max-991px:align-middle max-991px:text-center max-991px:border-t max-991px:border-customGray max-991px:p-10px"
+                      >
+                        <span class="px-[10px] py-[0px]">Courses</span>
+                        <div
+                          class="absolute top-[25px] right-[10px] px-[15px] py-[0px]"
+                        >
+                          <div
+                            id="courses-line-vertical"
+                            class="line vertical absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease top-[54%] transform rotate-90 min-992px:group-hover:rotate-180 max-991px:bg-white"
+                          ></div>
+                          <div
+                            class="line horizontal absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease top-[54%] max-991px:bg-white"
+                          ></div>
+                        </div>
+                      </a>
+                      <ul
+                        id="courses-items-dropdown"
+                        class="sub-menu-item min-992px:absolute min-992px:w-[220px] max-991px:w-full transition-all duration-300 ease cursor-pointer mt-[10px] border border-customGray min-992px:rounded-[10px] z-[1000] hidden min-992px:group-hover:inline-block max-991px:bg-customOrg min-992px:bg-white min-992px:top-[25px] min-992px:left-[7px] max-991px:text-white"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] rounded-[10px] max-991px:text-white"
+                            >All Course</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="group relative">
+                      <a
+                        id="service-toggle"
+                        href="#"
+                        class="text-base font-bold min-992px:py-15 px-17 capitalize transition-all duration-300 ease text-midDark group relative max-991px:text-white max-991px:justify-between max-991px:flex max-991px:align-middle max-991px:text-center max-991px:border-t max-991px:border-customGray max-991px:p-10px"
+                      >
+                        <span class="px-[15px] py-[0px]">Service</span>
+                        <div
+                          class="absolute top-[25px] right-[10px] px-[15px] py-[0px]"
+                        >
+                          <div
+                            id="service-line-vertical"
+                            class="line vertical absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease transform rotate-90 min-992px:group-hover:rotate-180 max-991px:bg-white"
+                          ></div>
+                          <div
+                            class="line horizontal absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease max-991px:top-[50%] max-991px:bg-white"
+                          ></div>
+                        </div>
+                      </a>
+                      <ul
+                        id="service-items-dropdown"
+                        class="sub-menu-item min-992px:absolute min-992px:w-[220px] max-991px:w-full transition-all duration-300 ease cursor-pointer mt-[10px] border border-customGray min-992px:rounded-[10px] z-[1000] hidden min-992px:group-hover:inline-block max-991px:bg-customOrg min-992px:bg-white min-992px:top-[25px] min-992px:left-[7px] max-991px:text-white"
+                      >
+                        <li class="group-dom">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                          >
+                            Domain
+                          </a>
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-dom-hover:block bg-white left-[218px] top-[-10px]"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Domain Search
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                .BD Domain
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Email Server
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                DNS Service
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Installation Service
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Website Maintenance
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="group-host relative">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Hosting</a
+                          >
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-host-hover:block bg-white left-[218px] top-[-11px]"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Shared Hosting
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Premium Hosting
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Reseller Hosting
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Wordpress Hosting
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                VPS Hosting
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-dm relative">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Digital Marketing</a
+                          >
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-dm-hover:block bg-white left-[218px] top-[-11px]"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Search Engine Optimize(SEO)
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Social Media Marketing (SMM)
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Digital Advertising
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Email Marketing
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px]"
+                              >
+                                Local Seo Service
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wd relative">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Web Development</a
+                          >
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-wd-hover:block bg-white left-[218px] top-[-11px]"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                PHP Web Application
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Mobile Web Application
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Ecommerce Web Application
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Custom Web Application
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                ERP Web Application
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wdd relative">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Web Design</a
+                          >
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-wdd-hover:block bg-white left-[218px] top-[-11px] max-991px:text-white"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                HTML CSS Design
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Ecommerce Web Design
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                PSD TO HTML Conversions
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Website Redesign
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                Blog Website Design
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Woocommerce Solutions</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Software Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Apps Development</a
+                          >
+                        </li>
+                        <li class="group-gd relative">
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Graphics Design</a
+                          >
+                          <ul
+                            class="absolute w-[220px] transition-all duration-300 ease-in-out cursor-pointer mt-[10px] border border-customGray rounded-[10px] z-[2000] hidden group-gd-hover:block bg-white left-[218px] top-[-11px] max-991px:text-white"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                              >
+                                Logo Design
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                              >
+                                Banner Design
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                              >
+                                Background Removal
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="text-base font-medium capitalize transition-all duration-300 ease-in-out text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                              >
+                                UI-UX Design
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="group relative">
+                      <a
+                        id="package-toggle"
+                        href="#"
+                        class="text-base font-bold min-992px:py-15 px-17 capitalize transition-all duration-300 ease text-midDark group relative max-991px:text-white max-991px:justify-between max-991px:flex max-991px:align-middle max-991px:text-center max-991px:border-t max-991px:border-customGray max-991px:p-10px"
+                      >
+                        <span class="px-[15px] py-[0px]">Package</span>
+                        <div
+                          class="absolute top-[25px] right-[10px] px-[15px] py-[0px]"
+                        >
+                          <div
+                            id="package-line-vertical"
+                            class="line vertical absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease transform rotate-90 min-992px:group-hover:rotate-180 max-991px:bg-white"
+                          ></div>
+                          <div
+                            class="line horizontal absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease max-991px:bg-white"
+                          ></div>
+                        </div>
+                      </a>
+                      <ul
+                        id="package-items-dropdown"
+                        class="sub-menu-item min-992px:absolute min-992px:w-[220px] max-991px:w-full transition-all duration-300 ease cursor-pointer mt-[10px] border border-customGray min-992px:rounded-[10px] z-[1000] hidden min-992px:group-hover:inline-block max-991px:bg-customOrg min-992px:bg-white min-992px:top-[25px] min-992px:left-[7px] max-991px:text-white"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                            >Ecommerce Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Woocommerce Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >School/College Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >News Portal Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Nonprofit/Ngo Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Health Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Technology Packages</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Real Estate Package</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Tour & Travel Package</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Corporate Package</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Personal Website</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="group relative">
+                      <a
+                        id="student-toggle"
+                        href="#"
+                        class="text-base font-bold min-992px:py-15 px-17 capitalize transition-all duration-300 ease text-midDark group relative max-991px:text-white max-991px:justify-between max-991px:flex max-991px:align-middle max-991px:text-center max-991px:border-t max-991px:border-customGray max-991px:p-10px"
+                      >
+                        <span class="px-[15px] py-[0px]">Student</span>
+                        <div
+                          class="absolute top-[25px] right-[10px] px-[15px] py-[0px]"
+                        >
+                          <div
+                            id="student-line-vertical"
+                            class="line vertical absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease transform rotate-90 min-992px:group-hover:rotate-180 max-991px:bg-white"
+                          ></div>
+                          <div
+                            class="line horizontal absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease max-991px:bg-white"
+                          ></div>
+                        </div>
+                      </a>
+                      <ul
+                        id="student-items-dropdown"
+                        class="sub-menu-item min-992px:absolute min-992px:w-[220px] max-991px:w-full transition-all duration-300 ease cursor-pointer mt-[10px] border border-customGray min-992px:rounded-[10px] z-[1000] hidden min-992px:group-hover:inline-block max-991px:bg-customOrg min-992px:bg-white min-992px:top-[25px] min-992px:left-[7px] max-991px:text-white"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                            >Student Admission</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white max-991px:border-t max-991px:border-customGray"
+                            >Student Feedback</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white max-991px:border-t max-991px:border-customGray"
+                            >Student Support
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white max-991px:border-t max-991px:border-customGray"
+                            >Admission Help</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="group relative">
+                      <a
+                        id="company-toggle"
+                        href="#"
+                        class="text-base font-bold min-992px:py-15 px-17 capitalize transition-all duration-300 ease text-midDark group relative max-991px:text-white max-991px:justify-between max-991px:flex max-991px:align-middle max-991px:text-center max-991px:border-t max-991px:border-b max-991px:border-customGray max-991px:p-10px"
+                      >
+                        <span class="px-[15px] py-[0px]">Company</span>
+                        <div
+                          class="absolute top-[25px] right-[10px] px-[15px] py-[0px]"
+                        >
+                          <div
+                            id="company-line-vertical"
+                            class="line vertical absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease transform rotate-90 min-992px:group-hover:rotate-180 max-991px:bg-white"
+                          ></div>
+                          <div
+                            class="line horizontal absolute w-[10px] h-[2px] bg-midDark transition-transform duration-300 ease max-991px:bg-white"
+                          ></div>
+                        </div>
+                      </a>
+                      <ul
+                        id="company-items-dropdown"
+                        class="sub-menu-item min-992px:absolute min-992px:w-[220px] max-991px:w-full transition-all duration-300 ease cursor-pointer mt-[10px] border border-customGray min-992px:rounded-[10px] z-[1000] hidden min-992px:group-hover:inline-block max-991px:bg-customOrg min-992px:bg-white min-992px:top-[25px] min-992px:left-[7px] max-991px:text-white"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:text-white"
+                            >Blog</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Contact</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >About Us
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Gallary</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Team</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >Event</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-base font-medium capitalize transition-all duration-300 ease text-midDark hover:text-white inline-block w-full hover:bg-dipOrg py-[6px] px-[10px] max-991px:border-t max-991px:border-customGray max-991px:text-white"
+                            >News</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="max-991px:p-10px">
+                      <a
+                        href="#"
+                        class="text-base font-bold py-15 px-17 capitalize transition-all duration-300 ease text-midDark max-991px:text-white"
+                        >Portfolio
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <a
+                  href="#"
+                  class="rounded-tl-custom-tl-2 rounded-tr-custom-tr-0 rounded-br-custom-br-0 rounded-bl-custom-bl-2 p-15 text-dipOrg max-767px:hidden"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>LOG IN</span>
+                </a>
+                <a
+                  href="#"
+                  class="text-white rounded-tl-custom-tl-0 rounded-tr-custom-tr-2 rounded-br-custom-br-2 rounded-bl-custom-bl-0 p-15 bg-customOrg max-767px:hidden"
+                >
+                  <i class="fa-solid fa-users"></i>
+                  <span>SIGN UP</span>
+                </a>
+                <div
+                  class="res-menu ml-15px flex text-center align-middle lg:hidden"
+                >
+                  <i
+                    id="toggle-bar-button"
+                    class="fa-solid fa-bars text-25px text-customOrg cursor-pointer"
+                  ></i>
+                  <i
+                    id="toggle-button"
+                    class="fa-solid fa-info text-white text-15px ml-15px bg-customOrg px-6px py-3px cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header-bottom end -->
+
+        <!-- hero-section-start -->
+        <!-- hero section start -->
+        <div
+          class="w-[92%] flex mx-auto gap-[30px] relative max-1199px:flex-col min-1200px:justify-center  min-1200px:items-center"
+        >
+          <!-- hero child right section start -->
+          <div class="hero-child-right">
+            <h6
+              class="font-normal not-italic text-[20px] text-customOrg mb-[25px]"
+            >
+              SYMBOL OF LEARNING & EARING
+            </h6>
+            <h3 class="font-bold not-italic text-[50px] mb-[25px]">
+              <span class="min-992px:block">Build Skills</span> With Experts Any
+              <span class="min-992px:block">Time, Anywhere</span>
+            </h3>
+            <p
+              class="font-normal not-italic text-[20px] text-custom_light_dark mb-[25px]"
+            >
+              Weather it's the hot searching Sahara or the cold winter in <br />
+              the Iceland, we help you deliver the best tour packages for any
+              country you wish for.
+            </p>
+            <!-- hero child button section start -->
+            <div
+              class="hero-child-right-btn max-1199px:flex max-1199px:items-center mb-[25px]"
+            >
+              <button
+                class="py-2 px-[15px] rounded-[10px] bg-customOrg outline-none border-none text-custom_white"
+              >
+                Book ATour
+              </button>
+              <button
+                class="py-2 px-[15px] rounded-[10px] bg-customOrg outline-none border-none text-custom_white ml-[50px]"
+              >
+                Book ATour
+              </button>
+              <!-- <i
+                class="fa-solid fa-phone p-[10px] border border-customGray rounded-[8px] ml-[20px]"
+              ></i>
+              <div class="inline-block relative w-[200px]">
+                <p
+                  class="font-normal text-[10px] text-deep_custom_gray absolute -top-[29px] max-1199px:-top-[22px] left-[5px]"
+                >
+                  Hotline
+                </p>
+                <h5
+                  class="font-bold text-[20px] absolute -top-[11px] max-1199px:-top-[7px] left-[5px]"
+                >
+                  +91 123 456 789
+                </h5> -->
+              </div>
+              <!-- hero child button section end -->
+               <!-- hero child count section start -->
+            <div class="flex gap-[20px] font-normal not-italic text-[20px]">
+              <div class="text-custom_light_dark font-normal not-italic">
+                <p class="inline text-customGrayDark">Popular : </p>
+                <ul class="inline">
+                  <li class="inline underline"><a href="#">Digital Marketting</a></li>
+                  <li class="inline ml-[10px] underline"><a href="#">Web Development</a></li>
+                  <li class="inline ml-[10px] underline"><a href="#">Graphics Design</a></li>
+                </ul>
+                <!-- <h4>50+</h4>
+                <h5>Tours</h5>
+              </div>
+              <div class="text-custom_light_dark font-normal not-italic">
+                <h4>100+</h4>
+                <h5>Clients</h5>
+              </div>
+              <div class="text-custom_light_dark font-normal not-italic">
+                <h4>750+</h4>
+                <h5>Partners</h5> -->
+              </div>
+            </div>
+            <!-- hero child count section end -->
+            </div>
+            
+             <!-- hero child left section start -->
+          <div class="hero-child-left relative">
+            <!-- animation section start -->
+            <div
+              class="max-1199px:d-none-important w-[700px] h-[700px] rounded-full border-[1.75px] border-dashed border-custom_pink animate-rotate flex justify-center items-center"
+            >
+              <div
+                class="max-1199px:d-none-important w-[550px] h-[550px] rounded-full border-[1.75px] border-dashed border-custom_purple animate-rotate flex justify-center items-center"
+              >
+                <div
+                  class="max-1199px:d-none-important w-[450px] h-[450px] rounded-full border-[1.75px] border-dashed border-custom_yellow animate-rotate"
+                ></div>
+              </div>
+            </div>
+            <!-- animation section end -->
+            <img
+              class="w-[650px] min-1200px:absolute min-1200px:top-0 min-1200px:-left-[78px]"
+              src="./assets/images/19197587.png"
+              alt="Image Not Found"
+            />
+          </div>
+          <!-- hero child left section end -->
+            
+          </div>
+          <!-- hero child right section end -->
+         
+        </div>
+        <!-- hero section end -->
+        <!-- hero-section-end -->
+      </div>
+
+      <!-- footer section start -->
+      <div
+        class="footer-section-wrapper bg-bg_dipdark w-full relative pb-[90px]"
+      >
+        <div class="fs-shape">
+          <img src="./assets/images/03.png" alt="Image Not Found" />
+          <img
+            src="./assets/images/04.png"
+            alt="Image Not Found"
+            class="absolute bottom-0 right-0 z-0"
+          />
+        </div>
+        <div
+          class="footer-newsletter w-full items-center justify-center pb-[30px]"
+        >
+          <div class="container w-11/12 mx-auto">
+            <div
+              class="footer-newsletter-wrapper flex max-1199px:flex-col justify-between border-b border-customGrayDark pb-[120px]"
+            >
+              <div
+                class="footer-newsletter-text min-1200px:w-[50%] min-1200px:absolute top-[74px]"
+              >
+                <div
+                  class="footer-newsletter-text-wrapper w-[70%] mx-auto max-1199px:pb-[50px]"
+                >
+                  <h3 class="text-25px font-bold text-white text-center">
+                    Want Us To Email You About Special Offers And Updates?
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="footer-newsletter-form min-1200px:w-[50%] flex items-center justify-center min-1200px:absolute min-1200px:top-[60px] min-1200px:right-0"
+              >
+                <form action="/" class="align-middle w-[80%]">
+                  <div
+                    class="nfs bg-bg_white outline-none text-xl w-full flex justify-between px-[5px] py-[6px] max-575px:relative"
+                  >
+                    <div>
+                      <i
+                        class="fa-regular fa-paper-plane text-bg_green p-[2px] text-base"
+                      ></i>
+                      <input
+                        type="email"
+                        placeholder="Enter Your Email"
+                        class="outline-none pt-10px pr-0px pb-10px pl-5px text-base"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="bg-bg_green text-white font-bold px-[10px] py-[0px] max-575px:py-[8px] max-575px:absolute max-575px:top-[80px] max-575px:right-[30%] max-575px:mr-[-25px]"
+                    >
+                      Subscribe Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-top z-10">
+            <div class="footer-top-items flex w-11/12 mx-auto flex-wrap">
+              <div
+                class="footer-top-wrapper-items min-w-1/4% z-10 max-991px:min-w-[300px] mt-[20px]"
+              >
+                <div>
+                  <h4
+                    class="relative text-white after:content-[''] after:block after:w-[50px] after:h-[2px] after:bg-green-500 after:absolute after:left-0 after:bottom-[-10px] font-bold text-2xl leading-c-1.3"
+                  >
+                    Site Map
+                  </h4>
+                </div>
+                <ul class="mt-[10px]">
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Documentation</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Feedback</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Plugins</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Support Forums</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Themes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="footer-top-wrapper-items min-w-1/4% z-10 max-991px:min-w-[300px] mt-[20px]"
+              >
+                <div>
+                  <h4
+                    class="relative text-white after:content-[''] after:block after:w-[50px] after:h-[2px] after:bg-green-500 after:absolute after:left-0 after:bottom-[-10px] font-bold text-2xl leading-c-1.3"
+                  >
+                    Useful Links
+                  </h4>
+                </div>
+                <ul class="mt-[10px]">
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="footer-top-wrapper-items min-w-1/4% z-10 max-991px:min-w-[300px] mt-[20px]"
+              >
+                <div>
+                  <h4
+                    class="relative text-white after:content-[''] after:block after:w-[50px] after:h-[2px] after:bg-green-500 after:absolute after:left-0 after:bottom-[-10px] font-bold text-2xl leading-c-1.3"
+                  >
+                    Social Contact
+                  </h4>
+                </div>
+                <ul class="mt-[10px]">
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >YouTube</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="footer-top-wrapper-items min-w-1/4% z-10 max-991px:min-w-[300px] mt-[20px]"
+              >
+                <div>
+                  <h4
+                    class="relative text-white after:content-[''] after:block after:w-[50px] after:h-[2px] after:bg-green-500 after:absolute after:left-0 after:bottom-[-10px] font-bold text-2xl leading-c-1.3"
+                  >
+                    Our Support
+                  </h4>
+                </div>
+                <ul class="mt-[10px]">
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Paid with Mollie</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Status</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Changelog</a
+                    >
+                  </li>
+                  <li class="px-0 py-2">
+                    <a href="#" class="text-white text-[16px] px-0 py-2"
+                      >Contact Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- footer-bottom section start -->
+      <div class="footer-bottom w-full">
+        <div class="footer-bottom-wrapper w-[80%] mx-auto px-0 py-[30px]">
+          <p class="text-center text-[20px] text-customGrayDark">
+            © 2024
+            <a
+              href="/"
+              class="font-semibold text-midDark hover:text-customOrg transition-all duration-300 ease p-[5px]"
+              >All Rights Reserved</a
+            >
+            Designed by
+            <a
+              href="/"
+              class="font-semibold text-midDark hover:text-customOrg transition-all duration-300 ease p-[5px]"
+              >Tech IT Center</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- footer-bottom section end -->
+      <!-- footer section end -->
+    </div>
+
+    <!-- js script -->
+    <script>
+      function toggleNav() {
+        const headerNav = document.getElementById("header-top-nav");
+        headerNav.classList.toggle("hidden");
+      }
+
+      function checkWidth() {
+        const headerNav = document.getElementById("header-top-nav");
+        const toggleButton = document.getElementById("toggle-button");
+        if (window.innerWidth <= 991) {
+          toggleButton.classList.remove("hidden");
+          headerNav.classList.add("hidden");
+        } else {
+          toggleButton.classList.add("hidden");
+          headerNav.classList.remove("hidden");
+        }
+      }
+
+      document
+        .getElementById("toggle-button")
+        .addEventListener("click", toggleNav);
+      window.addEventListener("resize", checkWidth);
+      window.addEventListener("load", checkWidth);
+
+      // top header menu start
+      function toggleBarNav() {
+        const headerNav = document.getElementById("header-bottom-nav");
+        headerNav.classList.toggle("hidden");
+      }
+
+      function checkBarWidth() {
+        const headerNav = document.getElementById("header-bottom-nav");
+        const toggleButton = document.getElementById("toggle-bar-button");
+        if (window.innerWidth <= 991) {
+          toggleButton.classList.remove("hidden");
+          headerNav.classList.add("hidden");
+        } else {
+          toggleButton.classList.add("hidden");
+          headerNav.classList.remove("hidden");
+        }
+      }
+
+      document
+        .getElementById("toggle-bar-button")
+        .addEventListener("click", toggleBarNav);
+      window.addEventListener("resize", checkBarWidth);
+      window.addEventListener("load", checkBarWidth);
+
+      // Nav Course JavaScript to handle toggle functionality and removal
+      const toggleButton = document.getElementById("courses-toggle");
+      const dropdownSection = document.getElementById("courses-items-dropdown");
+      const verticalLine = document.getElementById("courses-line-vertical");
+      // Add event listener to the toggle button
+      toggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the dropdown section
+        if (dropdownSection.style.display === "none") {
+          dropdownSection.style.display = "block";
+          // Show the vertical line element
+          verticalLine.style.display = "none";
+        } else {
+          dropdownSection.style.display = "none";
+          // Hide the vertical line element
+          verticalLine.style.display = "block";
+        }
+      });
+
+      // Nav Service JavaScript to handle toggle functionality and removal
+      const serviceToggleButton = document.getElementById("service-toggle");
+      const serviceDropdownSection = document.getElementById(
+        "service-items-dropdown"
+      );
+      const serviceVerticalLine = document.getElementById(
+        "service-line-vertical"
+      );
+      // Add event listener to the toggle button
+      serviceToggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the dropdown section
+        if (serviceDropdownSection.style.display === "none") {
+          serviceDropdownSection.style.display = "block";
+          // Show the vertical line element
+          serviceVerticalLine.style.display = "none";
+        } else {
+          serviceDropdownSection.style.display = "none";
+          // Hide the vertical line element
+          serviceVerticalLine.style.display = "block";
+        }
+      });
+      // Nav Package JavaScript to handle toggle functionality and removal
+      const packageToggleButton = document.getElementById("package-toggle");
+      const packageDropdownSection = document.getElementById(
+        "package-items-dropdown"
+      );
+      const packageVerticalLine = document.getElementById(
+        "package-line-vertical"
+      );
+      // Add event listener to the toggle button
+      packageToggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the dropdown section
+        if (packageDropdownSection.style.display === "none") {
+          packageDropdownSection.style.display = "block";
+          // Show the vertical line element
+          packageVerticalLine.style.display = "none";
+        } else {
+          packageDropdownSection.style.display = "none";
+          // Hide the vertical line element
+          packageVerticalLine.style.display = "block";
+        }
+      });
+
+      // Nav Student JavaScript to handle toggle functionality and removal
+      const studentToggleButton = document.getElementById("student-toggle");
+      const studentDropdownSection = document.getElementById(
+        "student-items-dropdown"
+      );
+      const studentVerticalLine = document.getElementById(
+        "student-line-vertical"
+      );
+      // Add event listener to the toggle button
+      studentToggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the dropdown section
+        if (studentDropdownSection.style.display === "none") {
+          studentDropdownSection.style.display = "block";
+          // Show the vertical line element
+          studentVerticalLine.style.display = "none";
+        } else {
+          studentDropdownSection.style.display = "none";
+          // Hide the vertical line element
+          studentVerticalLine.style.display = "block";
+        }
+      });
+
+      // Nav Company JavaScript to handle toggle functionality and removal
+      const companyToggleButton = document.getElementById("company-toggle");
+      const companyDropdownSection = document.getElementById(
+        "company-items-dropdown"
+      );
+      const companyVerticalLine = document.getElementById(
+        "company-line-vertical"
+      );
+      // Add event listener to the toggle button
+      companyToggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the dropdown section
+        if (companyDropdownSection.style.display === "none") {
+          companyDropdownSection.style.display = "block";
+          // Show the vertical line element
+          companyVerticalLine.style.display = "none";
+        } else {
+          companyDropdownSection.style.display = "none";
+          // Hide the vertical line element
+          companyVerticalLine.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
